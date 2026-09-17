@@ -31,8 +31,24 @@ Inicio
       Escreval ("3 - Noite")
       Escreva ("Escolha novamente: ")
       Leia (opcao_turno)
-
    FimEnquanto
+   
+   se opcao_turno = 1 entao
+   turno <- "Manhã"
+   senao
+   se opcao_turno = 2 entao
+   turno <- "Tarde"
+   senao
+   turno <- "Noite"
+   fimse
+   fimse
 
+   escreval("")
+   escreval("Turno Selecionado:",turno)
+   escreval("")
+
+     // ================================
+    // US02 - Informar a quantidade de profissionais
+    // ================================
 
 Fimalgoritmo
